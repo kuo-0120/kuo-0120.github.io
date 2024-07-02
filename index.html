@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>自我介紹</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <nav class="navigation">
+        <div class="nav-left">
+            <i class="fas fa-tools"></i>
+            <span>作業工程師</span>
+        </div>
+        <div class="nav-right">
+            <ul>
+                <li><a href="#education"><i class="fas fa-graduation-cap"></i> 學歷</a></li>
+                <li><a href="#experience"><i class="fas fa-briefcase"></i> 經歷</a></li>
+                <li><a href="#about"><i class="fas fa-user"></i> 關於我</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="header">
+        <div class="background-image"></div>
+        <div class="header-content">
+            <img src="image/molly.jpg" alt="Profile Picture" class="profile-picture">
+            <h1>郭妙軒</h1>
+            <p>歡迎來到我的個人網站</p>
+        </div>
+    </header>
+
+    <div class="container">
+        <section id="education" class="card">
+            <div class="card-content">
+                <div class="left">
+                    <h2>學歷</h2>
+                    <li>2016年畢業於興華國小</li>
+                    <p></p>
+                    <li>2019年畢業於萬新國中</li>
+                    <p></p>
+                    <li>2022年畢業於屏東女中</li>
+                    <p></p>
+                    <li>目前就讀於嘉義大學</li>
+                    <p></p>
+                </div>
+                <div class="right">
+                    <div class="carousel">
+                        <img src="image/elementary1.jpg" alt="Education Image" class="card-image">
+                        <img src="image/elementary2.jpg" alt="Education Image" class="card-image">
+                        <img src="image/elementary3.jpg" alt="Education Image" class="card-image">
+                        <img src="image/gept1.jpg" alt="Education Image" class="card-image">
+                        <img src="image/gept2.jpg" alt="Education Image" class="card-image">
+                        <img src="image/junior1.jpg" alt="Education Image" class="card-image">
+                        <img src="image/junior2.jpg" alt="Education Image" class="card-image">
+                        <img src="image/senior.jpg" alt="Education Image" class="card-image">
+                        <img src="image/senior1.jpg" alt="Education Image" class="card-image">
+                        <img src="image/toeic.jpg" alt="Education Image" class="card-image">
+                    </div>
+              </div>
+            </div>
+        </section>
+
+        <section id="experience" class="card">
+            <div class="card-content">
+                <div class="left">
+                    <h2>經歷</h2>
+                    <ul>
+                    <li>2022年擔任博幼基金會英文課輔老師</li>
+                        <p>   </p>
+                        <p>   </p>
+                    <li>2022年擔任特殊生全科家教</li>
+                        <p>   </p>
+                        <p>   </p>
+                    <li>2024年擔任國小生陪讀陪玩</li>
+                        <p>   </p>
+                        <p>   </p>
+                    </ul>
+                </div>
+                <div class="right">
+                    <div class="carousel">
+                        <img src="image/job.jpg" alt="Education Image" class="card-image">
+                        <img src="image/job1.jpg" alt="Education Image" class="card-image">
+                        <img src="image/job2.jpg" alt="Education Image" class="card-image">
+                    </div>
+              </div>
+            </div>
+        </section>
+
+        <section id="about" class="card">
+            <div class="card-content">
+                <div class="left">
+                    <h2>關於我</h2>
+                    <ul>
+                    <li><strong>姓名</strong>: 郭妙軒</li>
+                    <li><strong>學歷</strong>: 國立嘉義大學資訊工程系就讀</li>
+                    <li><strong>專長</strong>: 英文、數學、C++</li>
+                    <li><strong>興趣</strong>: 程式設計、旅行、運動</li>
+                    <li><strong>目標</strong>: 持續學習新技術，成為全端工程師</li>
+                    <li><strong>教學理念</strong>: 配合學生程度，調整教學方式。打造基礎邏輯思考的學習方式。</li>
+                </ul>
+                </div>
+                <div class="right">
+                    <div class="carousel">
+                        <img src="image/molly.jpg" alt="Education Image" class="card-image">
+                        <img src="image/molly2.jpg" alt="Education Image" class="card-image">
+                        <img src="image/molly1.jpg" alt="Education Image" class="card-image">
+                        <img src="image/travel.jpg" alt="Education Image" class="card-image">
+                    </div>
+              </div>
+            </div>
+        </section>
+    </div>
+
+    <button id="topButton" class="top-button">
+        Top
+    </button>
+
+    <footer class="footer">
+        <ul>
+            <p>歡迎聯絡我!!!</p>
+            <li><a href="https://www.facebook.com/profile.php?id=100012658962025"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="https://www.instagram.com/kuo_120/"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="mailto:molly930120@gmail.com"><i class="far fa-envelope"></i></a></li>
+        </ul>
+    </footer>
+
+    <script>
+        window.addEventListener('scroll', function() {
+        // 获取按钮元素
+        var topButton = document.getElementById('topButton');
+
+        // 如果窗口的滚动高度大于 300px，显示按钮；否则隐藏按钮
+        if (window.pageYOffset > 300) {
+            topButton.style.display = 'block'; // 显示按钮
+        } else {
+            topButton.style.display = 'none'; // 隐藏按钮
+        }
+    });
+
+    // 点击按钮后滚动到页面顶部
+    topButton.addEventListener('click', function() {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth' // 平滑滚动效果
+        });
+    });
+        
+    document.addEventListener('DOMContentLoaded', function() {
+        var carousels = document.querySelectorAll('.carousel');
+        
+        carousels.forEach(function(carousel) {
+            var images = carousel.querySelectorAll('img');
+            var currentIndex = 0;
+
+            function showNextImage() {
+                images[currentIndex].classList.remove('active');
+                currentIndex = (currentIndex + 1) % images.length;
+                images[currentIndex].classList.add('active');
+            }
+
+            images[currentIndex].classList.add('active');
+            setInterval(showNextImage, 3000); // Change image every 3 seconds
+        });
+    });
+    </script>
+</body>
+</html>
